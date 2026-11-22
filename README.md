@@ -4,7 +4,7 @@
 
 TURBA is an open collection of [Agent Skills](https://agentskills.io) (`SKILL.md` format) that teach an AI agent how a geotechnical engineer works: build the ground model first, never invent soil parameters, name the standard, check orders of magnitude, and show the calculation chain. Each skill exists in English (`SKILL.md`) and French (`SKILL.fr.md`).
 
-Catalogue on GEOTEX: <https://geotex.asas-ec.ma/turba>
+The catalogue is also shown in [GEOTEX](https://geotex.asas-ec.ma) (Knowledge > TURBA).
 
 > TURBA helps an engineer; it does not replace one. Every result an agent produces with these skills is a draft that a qualified geotechnical engineer checks and signs.
 
@@ -67,6 +67,6 @@ Skill texts: CC BY 4.0. Scripts: MIT. See [LICENSE](LICENSE).
 
 Installation : `npx skills add ask220119/turba`, ou dans Claude Code `/plugin marketplace add ask220119/turba` puis `/plugin install turba@turba`.
 
-Catalogue sur GEOTEX : <https://geotex.asas-ec.ma/turba>
+Le catalogue est aussi présenté dans [GEOTEX](https://geotex.asas-ec.ma) (Connaissances > TURBA).
 
 TURBA aide l'ingénieur, il ne le remplace pas : tout résultat produit par un agent avec ces skills est un projet à vérifier et signer par un géotechnicien qualifié.
