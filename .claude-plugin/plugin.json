@@ -1,0 +1,10 @@
+{
+  "name": "turba",
+  "version": "0.1.0",
+  "description": "TURBA: open geotechnical engineering skills for AI agents (foundations, retaining walls, slopes, seismic and liquefaction, site investigation, ground improvement). English and French.",
+  "author": { "name": "ask220119" },
+  "homepage": "https://github.com/ask220119/turba",
+  "repository": "https://github.com/ask220119/turba",
+  "license": "CC-BY-4.0",
+  "keywords": ["geotechnics", "geotechnical engineering", "eurocode 7", "foundations", "slope stability", "liquefaction"]
+}

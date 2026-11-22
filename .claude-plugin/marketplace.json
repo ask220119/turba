@@ -1,0 +1,13 @@
+{
+  "name": "turba",
+  "owner": { "name": "ask220119" },
+  "metadata": { "description": "TURBA geotechnical skills for AI agents" },
+  "plugins": [
+    {
+      "name": "turba",
+      "source": "./",
+      "description": "Open geotechnical engineering skills: foundations, retaining walls, slopes, seismic and liquefaction, site investigation, ground improvement.",
+      "category": "engineering"
+    }
+  ]
+}

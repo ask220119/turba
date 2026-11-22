@@ -1,0 +1,210 @@
+{
+  "collection": "TURBA",
+  "version": "0.1.0",
+  "repository": "https://github.com/ask220119/turba",
+  "install": {
+    "skills_cli": "npx skills add ask220119/turba",
+    "claude_code": "/plugin marketplace add ask220119/turba"
+  },
+  "skills": [
+    {
+      "name": "turba-core",
+      "title": {
+        "en": "TURBA core: how to do geotechnical work as an agent",
+        "fr": "TURBA socle : faire de la géotechnique en tant qu'agent"
+      },
+      "description": {
+        "en": "Shared rules for any geotechnical engineering task done by an AI agent (foundations, retaining walls, slopes, seismic, site investigation, ground improvement) - ground model, units, Eurocode 7 / French NF P94 safety formats, checks before issuing a result, and routing to the right TURBA skill. Load first for any geotechnical calculation or report.",
+        "fr": "Règles communes à toute tâche géotechnique confiée à un agent IA (fondations, soutènements, pentes, séisme, reconnaissances, amélioration des sols) - modèle géotechnique, unités, formats de sécurité Eurocode 7 et normes NF P94, contrôles avant émission, et aiguillage vers le bon skill TURBA. À charger en premier pour tout calcul ou rapport géotechnique."
+      },
+      "domain": "general",
+      "version": "0.1.0",
+      "standards": [
+        "EN 1997-1 (Eurocode 7)",
+        "NF P94-500",
+        "NF P94-261",
+        "NF P94-262",
+        "NF P94-270",
+        "NF P94-282",
+        "RPS 2000 (2011)"
+      ],
+      "tests": [],
+      "license": "CC-BY-4.0",
+      "scripts": [],
+      "path": "skills/turba-core",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-core"
+    },
+    {
+      "name": "turba-foundations",
+      "title": {
+        "en": "Foundations and static soil-structure interaction",
+        "fr": "Fondations et interaction sol-structure statique"
+      },
+      "description": {
+        "en": "Design and check of shallow footings, rafts, semi-deep and deep foundations (piles, barrettes, groups) to Eurocode 7 and NF P94-261/262 - bearing capacity from pressuremeter, CPT or c-phi, settlement (Menard, elastic, oedometer), pile capacity and t-z behaviour, negative skin friction, lateral loading and soil springs for the structural engineer. Use for any foundation calculation or review.",
+        "fr": "Conception et vérification des fondations superficielles, radiers, fondations semi-profondes et profondes (pieux, barrettes, groupes) selon l'Eurocode 7 et les NF P94-261/262 - portance depuis le pressiomètre, le CPT ou c-phi, tassements (Ménard, élasticité, œdomètre), portance et loi t-z des pieux, frottement négatif, efforts transversaux et raideurs pour le BE structure. Pour tout calcul ou contrôle de fondation."
+      },
+      "domain": "foundations",
+      "version": "0.1.0",
+      "standards": [
+        "EN 1997-1",
+        "NF P94-261",
+        "NF P94-262"
+      ],
+      "tests": [
+        "PMT",
+        "CPT",
+        "SPT",
+        "oedometer"
+      ],
+      "license": "CC-BY-4.0",
+      "scripts": [
+        "menard_settlement.py"
+      ],
+      "path": "skills/turba-foundations",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-foundations"
+    },
+    {
+      "name": "turba-ground-improvement",
+      "title": {
+        "en": "Ground improvement",
+        "fr": "Amélioration des sols"
+      },
+      "description": {
+        "en": "Selection, design, specification and quality control of ground improvement and reinforcement - stone columns (CFMS 2011), rigid inclusions (ASIRI), prefabricated vertical drains and preloading, embankments on soft soil, dynamic compaction, vibro-compaction, grouting and jet grouting, lime or cement treatment, geosynthetics, and liquefaction mitigation. Use for any ground improvement choice, calculation or specification.",
+        "fr": "Choix, dimensionnement, prescription et contrôle des techniques d'amélioration et de renforcement des sols - colonnes ballastées (CFMS 2011), inclusions rigides (ASIRI), drains verticaux et préchargement, remblais sur sols compressibles, compactage dynamique, vibrocompactage, injections et jet grouting, traitement à la chaux ou au ciment, géosynthétiques, traitement contre la liquéfaction. Pour tout choix, calcul ou prescription d'amélioration de sol."
+      },
+      "domain": "ground-improvement",
+      "version": "0.1.0",
+      "standards": [
+        "CFMS recommendations for stone columns (2011)",
+        "ASIRI national project (2012)",
+        "EN 14731",
+        "EN 12716",
+        "EN 15237"
+      ],
+      "tests": [],
+      "license": "CC-BY-4.0",
+      "scripts": [],
+      "path": "skills/turba-ground-improvement",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-ground-improvement"
+    },
+    {
+      "name": "turba-retaining-walls",
+      "title": {
+        "en": "Embedded retaining walls and deep excavations",
+        "fr": "Écrans de soutènement et fouilles profondes"
+      },
+      "description": {
+        "en": "Design and check of embedded retaining walls and deep excavations (diaphragm walls, secant or contiguous piles, soldier piles, sheet piles, struts, ground anchors) to Eurocode 7 design approach 2 and NF P94-282 - earth pressure, subgrade reaction method, staged construction, anchor free length (Kranz), hydraulic heave and uplift, base stability, settlement of neighbouring buildings. Use for any excavation support calculation or review.",
+        "fr": "Conception et vérification des écrans de soutènement et fouilles profondes (parois moulées, pieux sécants ou contigus, berlinoises, palplanches, butons, tirants) selon l'Eurocode 7 approche 2 et la NF P94-282 - poussée et butée, méthode aux coefficients de réaction, phasage, longueur libre des tirants (Kranz), soulèvement hydraulique et renard, stabilité du fond, tassement des avoisinants. Pour tout calcul ou contrôle de soutènement de fouille."
+      },
+      "domain": "retaining-structures",
+      "version": "0.1.0",
+      "standards": [
+        "EN 1997-1",
+        "NF P94-282",
+        "EN 1993-5",
+        "NF EN 1537",
+        "NF EN ISO 22477-5"
+      ],
+      "tests": [],
+      "license": "CC-BY-4.0",
+      "scripts": [],
+      "path": "skills/turba-retaining-walls",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-retaining-walls"
+    },
+    {
+      "name": "turba-seismic-liquefaction",
+      "title": {
+        "en": "Seismic geotechnics and liquefaction",
+        "fr": "Géotechnique sismique et liquéfaction"
+      },
+      "description": {
+        "en": "Geotechnical earthquake engineering - seismic action to Eurocode 8 (EN 1998-1/-5) and the Moroccan RPS 2000 rev. 2011, site classes and Vs30, liquefaction triggering from SPT and CPT (Boulanger and Idriss 2014) and its consequences, dynamic earth pressure (Mononobe-Okabe), seismic slope checks, dynamic soil stiffness and foundation impedances, construction vibrations. Use for any seismic geotechnical question.",
+        "fr": "Géotechnique sismique - action sismique selon l'Eurocode 8 (EN 1998-1/-5) et le RPS 2000 révisé 2011 (Maroc), classes de sol et Vs30, déclenchement de la liquéfaction par SPT et CPT (Boulanger et Idriss 2014) et ses conséquences, poussées dynamiques (Mononobe-Okabe), stabilité des pentes sous séisme, rigidité dynamique et impédances de fondations, vibrations de chantier. Pour toute question de géotechnique sismique."
+      },
+      "domain": "seismic",
+      "version": "0.1.0",
+      "standards": [
+        "EN 1998-1",
+        "EN 1998-5",
+        "RPS 2000 (rev. 2011)",
+        "NCEER 1997",
+        "Boulanger & Idriss 2014"
+      ],
+      "tests": [
+        "SPT",
+        "CPT",
+        "MASW",
+        "cross-hole"
+      ],
+      "license": "CC-BY-4.0",
+      "scripts": [
+        "liquefaction_spt.py"
+      ],
+      "path": "skills/turba-seismic-liquefaction",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-seismic-liquefaction"
+    },
+    {
+      "name": "turba-site-investigation",
+      "title": {
+        "en": "Site investigation and ground model",
+        "fr": "Reconnaissances et modèle géotechnique"
+      },
+      "description": {
+        "en": "Planning, checking and interpreting geotechnical site investigations - boreholes, pressuremeter (PMT, Menard), SPT, CPT/CPTu, laboratory tests (identification, oedometer, triaxial, shear box), geophysics, piezometers - building the ground model and characteristic values to Eurocode 7, and writing G1/G2 reports to NF P94-500. Use whenever test data must be read, checked, correlated or turned into design parameters.",
+        "fr": "Programmation, contrôle et interprétation des reconnaissances géotechniques - sondages, pressiomètre (PMT, Ménard), SPT, CPT/CPTu, essais de laboratoire (identification, œdomètre, triaxial, boîte de cisaillement), géophysique, piézomètres - construction du modèle géotechnique et des valeurs caractéristiques selon l'Eurocode 7, rédaction des rapports G1/G2 selon la NF P94-500. Dès que des résultats d'essais doivent être lus, contrôlés, corrélés ou transformés en paramètres de calcul."
+      },
+      "domain": "site-investigation",
+      "version": "0.1.0",
+      "standards": [
+        "EN 1997-1",
+        "EN 1997-2",
+        "NF P94-500",
+        "NF EN ISO 22476-1/-3/-4",
+        "NF EN ISO 14688",
+        "NF EN ISO 17892"
+      ],
+      "tests": [
+        "PMT",
+        "SPT",
+        "CPT",
+        "CPTu",
+        "oedometer",
+        "triaxial",
+        "MASW"
+      ],
+      "license": "CC-BY-4.0",
+      "scripts": [],
+      "path": "skills/turba-site-investigation",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-site-investigation"
+    },
+    {
+      "name": "turba-slope-stability",
+      "title": {
+        "en": "Slope stability and slope reinforcement",
+        "fr": "Stabilité des pentes et confortements"
+      },
+      "description": {
+        "en": "Slope and embankment stability and slope reinforcement - limit equilibrium (Bishop, Fellenius, non-circular methods), yield design, FE strength reduction, back-analysis of existing slopes and landslides, Eurocode 7 design approach 3 and NF P94-270, soil nailing (Clouterre), anchors and stabilising piles, drainage, pseudo-static seismic checks. Use for any slope, cutting, embankment or nailed wall calculation or review.",
+        "fr": "Stabilité des pentes et remblais et confortements - équilibre limite (Bishop, Fellenius, surfaces non circulaires), calcul à la rupture, réduction c-phi aux éléments finis, rétro-analyse des talus et glissements existants, Eurocode 7 approche 3 et NF P94-270, parois clouées (Clouterre), tirants et pieux stabilisateurs, drainage, vérification sismique pseudo-statique. Pour tout calcul ou contrôle de talus, déblai, remblai ou paroi clouée."
+      },
+      "domain": "slopes",
+      "version": "0.1.0",
+      "standards": [
+        "EN 1997-1",
+        "NF P94-270",
+        "Clouterre recommendations (1991",
+        "2002)"
+      ],
+      "tests": [],
+      "license": "CC-BY-4.0",
+      "scripts": [
+        "bishop.py"
+      ],
+      "path": "skills/turba-slope-stability",
+      "url": "https://github.com/ask220119/turba/tree/main/skills/turba-slope-stability"
+    }
+  ]
+}
